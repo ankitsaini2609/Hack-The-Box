@@ -28,7 +28,7 @@ Go to /home/floris directory there you will get user.txt Hurray (First step :-))
 then there is admin-area folder in same directory there is two files input and report , In input you can write someurl and output of that url stored in report. So after numbers of hit and tries I figured it out.
 Write this line in input :
 
-> url = "/root/root.txt" 
+> url = "file:///root/root.txt" 
 then open report you will get the hash.
 82c198ab6fc5365fdc6da2ee5c26064a
 
