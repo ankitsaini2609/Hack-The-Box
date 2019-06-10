@@ -104,8 +104,8 @@ Where part is easy, but the name part is difficult by looking at the code, It is
 > http://10.10.10.121/support/uploads/tickets
 
 
-Now It's time to google the exploit we will "unauthenciated shell upload exploit", when we run this exploit it was not working
-Again check the source code and modify the script, we will get shell as help user and user.txt.
+Now It's time to google the exploit we will get "unauthenciated shell upload exploit", By default it's not working because in the script it is taking local time while we need server time(UTC).
+Again check the source code and modify the script, we will get reverse shell as help user ==>  user.txt :).
 <b> Exploit is available as final_exploit you can download it </b>
 
 ### For Root :-
