@@ -96,20 +96,20 @@ Output:
 It is Helpdeskz CMS
 > http://10.10.10.121/support
 
-I tried to log a ticket and in file upload I tried to upload php reverse shell I got an error "Files not allowed"
-I checked the source code of HelpDeskz on github, I came to know that file is already uploaded and 
-I need to figure out where that file is uploaded i.e in which directory and what will be it's name.
-Where part is easy, but the name part is difficult by looking at the code, It is taking `md5(file name + current server time)` as filename and the folder where it is uploading is:
+Try to log a ticket and in file upload try to upload php reverse shell "Files not allowed" error pop up.
+Check the source code of HelpDeskz on github, We will get to know file is already uploaded and 
+Now the question is where that file is uploaded i.e in which directory and what will be it's name.
+Where part is easy, but the name part is difficult by looking at the code, It is taking `md5(file name + current server time).php` as filename and the folder where it is uploading is:
 
 > http://10.10.10.121/support/uploads/tickets
 
 
-Now I googled for the exploit and I got "unauthenciated shell upload exploit", when I ran the exploit it was not working
-I again checked the source code and modify the script, Yup I got lucky I got shell as help user and got user.txt.
+Now It's time to google the exploit we will "unauthenciated shell upload exploit", when we run this exploit it was not working
+Again check the source code and modify the script, we will get shell as help user and user.txt.
 <b> Exploit is available as final_exploit you can download it </b>
 
 ### For Root :-
-After Basic Enumeration I searched for kernel version and got exploit: 
+After Basic Enumeration search for exploit related to kernel version: 
 > https://www.exploit-db.com/exploits/44298
 
 Got Root :)
