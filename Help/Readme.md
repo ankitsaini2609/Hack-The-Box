@@ -102,7 +102,7 @@ Where part is easy, but the name part is difficult by looking at the code, It is
 > http://10.10.10.121/support/uploads/tickets
 
 
-Now lets use our google skills to find an exploit for ???. Then we get unauthenciated shell upload exploit for ???. By default it doesn't work because the script uses local time while we need server time (UTC) . Again check the source code of helpdeskz and modify the script accordingly.
+Now lets use our google skills to find an exploit for helpdeskz. Then we get unauthenciated shell upload exploit. By default it doesn't work because the script uses local time while we need server time (UTC) . Again check the source code of helpdeskz and modify the script accordingly.
 we will get reverse shell which will lead us to user.txt
 <b> Exploit is available as final_exploit you can download it </b>
 
