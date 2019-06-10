@@ -1,1 +1,1 @@
-Writeup will be available once machine got retired.
+Writeup will be available once machine gets retired.
