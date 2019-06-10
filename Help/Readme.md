@@ -96,9 +96,7 @@ Output:
 It is Helpdeskz CMS
 > http://10.10.10.121/support
 
-Try to log a ticket and in file upload try to upload php reverse shell "Files not allowed" error pop up.
-Check the source code of HelpDeskz on github, We will get to know file is already uploaded and 
-Now the question is where that file is uploaded i.e in which directory and what will be it's name.
+Try to log a ticket. There's a file upload option while raising ticket. Use that to try to upload php reverse shell. You will be greeted with Files not allowed, error pop up. After checking the source code of HelpDeskz on github, we come to know that the file is already uploaded. Now the question arises as to where the file is being uploaded i.e in which directory and what will be the final filename.
 Where part is easy, but the name part is difficult by looking at the code, It is taking `md5(file name + current server time).php` as filename and the folder where it is uploading is:
 
 > http://10.10.10.121/support/uploads/tickets
