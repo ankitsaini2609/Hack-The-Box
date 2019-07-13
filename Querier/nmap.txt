@@ -1,0 +1,111 @@
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-05-28 21:34 IST
+NSE: Loaded 148 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 21:34
+Completed NSE at 21:34, 0.00s elapsed
+Initiating NSE at 21:34
+Completed NSE at 21:34, 0.00s elapsed
+Initiating Ping Scan at 21:34
+Scanning 10.10.10.125 [4 ports]
+Completed Ping Scan at 21:34, 0.20s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 21:34
+Completed Parallel DNS resolution of 1 host. at 21:34, 0.00s elapsed
+Initiating SYN Stealth Scan at 21:34
+Scanning 10.10.10.125 [1000 ports]
+Discovered open port 135/tcp on 10.10.10.125
+Discovered open port 139/tcp on 10.10.10.125
+Discovered open port 445/tcp on 10.10.10.125
+Increasing send delay for 10.10.10.125 from 0 to 5 due to 51 out of 168 dropped probes since last increase.
+Discovered open port 1433/tcp on 10.10.10.125
+Completed SYN Stealth Scan at 21:34, 18.40s elapsed (1000 total ports)
+Initiating Service scan at 21:34
+Scanning 4 services on 10.10.10.125
+Completed Service scan at 21:35, 13.79s elapsed (4 services on 1 host)
+Initiating OS detection (try #1) against 10.10.10.125
+Retrying OS detection (try #2) against 10.10.10.125
+Retrying OS detection (try #3) against 10.10.10.125
+Retrying OS detection (try #4) against 10.10.10.125
+Retrying OS detection (try #5) against 10.10.10.125
+Initiating Traceroute at 21:35
+Completed Traceroute at 21:35, 0.14s elapsed
+Initiating Parallel DNS resolution of 2 hosts. at 21:35
+Completed Parallel DNS resolution of 2 hosts. at 21:35, 0.00s elapsed
+NSE: Script scanning 10.10.10.125.
+Initiating NSE at 21:35
+Completed NSE at 21:35, 8.84s elapsed
+Initiating NSE at 21:35
+Completed NSE at 21:35, 0.28s elapsed
+Nmap scan report for 10.10.10.125
+Host is up (0.14s latency).
+Not shown: 996 closed ports
+PORT     STATE SERVICE       VERSION
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds?
+1433/tcp open  ms-sql-s      Microsoft SQL Server  14.00.1000.00
+| ms-sql-ntlm-info: 
+|   Target_Name: HTB
+|   NetBIOS_Domain_Name: HTB
+|   NetBIOS_Computer_Name: QUERIER
+|   DNS_Domain_Name: HTB.LOCAL
+|   DNS_Computer_Name: QUERIER.HTB.LOCAL
+|   DNS_Tree_Name: HTB.LOCAL
+|_  Product_Version: 10.0.17763
+| ssl-cert: Subject: commonName=SSL_Self_Signed_Fallback
+| Issuer: commonName=SSL_Self_Signed_Fallback
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2019-05-28T08:53:20
+| Not valid after:  2049-05-28T08:53:20
+| MD5:   8223 f401 08c7 5033 65b2 a221 ec56 5c37
+|_SHA-1: bb31 61f5 0f69 7a20 a14f 99ff 6553 216e f0de 6558
+|_ssl-date: 2019-05-28T15:05:30+00:00; -59m55s from scanner time.
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.70%E=4%D=5/28%OT=135%CT=1%CU=33408%PV=Y%DS=2%DC=T%G=Y%TM=5CED5C
+OS:4D%P=x86_64-pc-linux-gnu)SEQ(SP=104%GCD=1%ISR=105%CI=I%II=I%TS=U)OPS(O1=
+OS:M54DNW8NNS%O2=M54DNW8NNS%O3=M54DNW8%O4=M54DNW8NNS%O5=M54DNW8NNS%O6=M54DN
+OS:NS)WIN(W1=FFFF%W2=FFFF%W3=FFFF%W4=FFFF%W5=FFFF%W6=FF70)ECN(R=Y%DF=Y%T=80
+OS:%W=FFFF%O=M54DNW8NNS%CC=Y%Q=)T1(R=Y%DF=Y%T=80%S=O%A=S+%F=AS%RD=0%Q=)T2(R
+OS:=Y%DF=Y%T=80%W=0%S=Z%A=S%F=AR%O=%RD=0%Q=)T3(R=Y%DF=Y%T=80%W=0%S=Z%A=O%F=
+OS:AR%O=%RD=0%Q=)T4(R=Y%DF=Y%T=80%W=0%S=A%A=O%F=R%O=%RD=0%Q=)T5(R=Y%DF=Y%T=
+OS:80%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=80%W=0%S=A%A=O%F=R%O=%RD=0
+OS:%Q=)T7(R=Y%DF=Y%T=80%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T=80%IPL=1
+OS:64%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=80%CD=Z)
+
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=260 (Good luck!)
+IP ID Sequence Generation: Busy server or unknown class
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: mean: -59m55s, deviation: 0s, median: -59m55s
+| ms-sql-info: 
+|   10.10.10.125:1433: 
+|     Version: 
+|       name: Microsoft SQL Server 
+|       number: 14.00.1000.00
+|       Product: Microsoft SQL Server 
+|_    TCP port: 1433
+| smb2-security-mode: 
+|   2.02: 
+|_    Message signing enabled but not required
+| smb2-time: 
+|   date: 2019-05-28 20:35:34
+|_  start_date: N/A
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT       ADDRESS
+1   137.44 ms 10.10.12.1
+2   136.65 ms 10.10.10.125
+
+NSE: Script Post-scanning.
+Initiating NSE at 21:35
+Completed NSE at 21:35, 0.00s elapsed
+Initiating NSE at 21:35
+Completed NSE at 21:35, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 54.28 seconds
+           Raw packets sent: 1199 (56.374KB) | Rcvd: 1157 (49.578KB)

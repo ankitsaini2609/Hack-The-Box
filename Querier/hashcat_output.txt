@@ -1,0 +1,55 @@
+hashcat (v5.1.0) starting...
+
+OpenCL Platform #1: The pocl project
+====================================
+* Device #1: pthread-Intel(R) Core(TM) i5-5200U CPU @ 2.20GHz, 2048/5842 MB allocatable, 4MCU
+
+Hashes: 1 digests; 1 unique digests, 1 unique salts
+Bitmaps: 16 bits, 65536 entries, 0x0000ffff mask, 262144 bytes, 5/13 rotates
+Rules: 1
+
+Applicable optimizers:
+* Zero-Byte
+* Not-Iterated
+* Single-Hash
+* Single-Salt
+
+Minimum password length supported by kernel: 0
+Maximum password length supported by kernel: 256
+
+ATTENTION! Pure (unoptimized) OpenCL kernels selected.
+This enables cracking passwords and salts > length 32 but for the price of drastically reduced performance.
+If you want to switch to optimized OpenCL kernels, append -O to your commandline.
+
+Watchdog: Hardware monitoring interface not found on your system.
+Watchdog: Temperature abort trigger disabled.
+
+* Device #1: build_opts '-cl-std=CL1.2 -I OpenCL -I /usr/share/hashcat/OpenCL -D LOCAL_MEM_TYPE=2 -D VENDOR_ID=64 -D CUDA_ARCH=0 -D AMD_ROCM=0 -D VECT_SIZE=8 -D DEVICE_TYPE=2 -D DGST_R0=0 -D DGST_R1=3 -D DGST_R2=2 -D DGST_R3=1 -D DGST_ELEM=4 -D KERN_TYPE=5600 -D _unroll'
+* Device #1: Kernel m05600_a0-pure.f3a06a8c.kernel not found in cache! Building may take a while...
+Dictionary cache built:
+* Filename..: /usr/share/wordlists/rockyou.txt
+* Passwords.: 14344392
+* Bytes.....: 139921507
+* Keyspace..: 14344385
+* Runtime...: 5 secs
+
+MSSQL-SVC::QUERIER:8641d115cc73fc81:b363cf42a3b0189871422ac88069f494:0101000000000000c0653150de09d2014e9aa8e04aa15688000000000200080053004d004200330001001e00570049004e002d00500052004800340039003200520051004100460056000400140053004d00420033002e006c006f00630061006c0003003400570049004e002d00500052004800340039003200520051004100460056002e0053004d00420033002e006c006f00630061006c000500140053004d00420033002e006c006f00630061006c0007000800c0653150de09d201060004000200000008003000300000000000000000000000003000006375834eead311982886a8ce60806c56221cc665c6348d34e7fdd41b58ae5d100a001000000000000000000000000000000000000900220063006900660073002f00310030002e00310030002e00310035002e00310032003800000000000000000000000000:corporate568
+                                                 
+Session..........: hashcat
+Status...........: Cracked
+Hash.Type........: NetNTLMv2
+Hash.Target......: MSSQL-SVC::QUERIER:8641d115cc73fc81:b363cf42a3b0189...000000
+Time.Started.....: Thu May 30 13:26:16 2019 (28 secs)
+Time.Estimated...: Thu May 30 13:26:44 2019 (0 secs)
+Guess.Base.......: File (/usr/share/wordlists/rockyou.txt)
+Guess.Queue......: 1/1 (100.00%)
+Speed.#1.........:   314.2 kH/s (10.63ms) @ Accel:1024 Loops:1 Thr:1 Vec:8
+Recovered........: 1/1 (100.00%) Digests, 1/1 (100.00%) Salts
+Progress.........: 8962048/14344385 (62.48%)
+Rejected.........: 0/8962048 (0.00%)
+Restore.Point....: 8957952/14344385 (62.45%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:0-1
+Candidates.#1....: correita.54 -> coreyr1
+
+Started: Thu May 30 13:25:58 2019
+Stopped: Thu May 30 13:26:46 2019
