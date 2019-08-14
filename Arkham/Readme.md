@@ -1,7 +1,11 @@
 /css (Status: 302)
+
 /fonts (Status: 302)
+
 /images (Status: 302)
+
 /index.html (Status: 200)
+
 /js (Status: 302)
 
 
