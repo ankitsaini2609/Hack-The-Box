@@ -1,0 +1,172 @@
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-08-03 00:20 IST
+NSE: Loaded 148 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 00:20
+Completed NSE at 00:20, 0.00s elapsed
+Initiating NSE at 00:20
+Completed NSE at 00:20, 0.00s elapsed
+Initiating Ping Scan at 00:20
+Scanning 10.10.10.147 [4 ports]
+Completed Ping Scan at 00:20, 0.24s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 00:20
+Completed Parallel DNS resolution of 1 host. at 00:20, 0.00s elapsed
+Initiating SYN Stealth Scan at 00:20
+Scanning 10.10.10.147 [65535 ports]
+Discovered open port 80/tcp on 10.10.10.147
+Discovered open port 22/tcp on 10.10.10.147
+Increasing send delay for 10.10.10.147 from 0 to 5 due to 365 out of 1215 dropped probes since last increase.
+SYN Stealth Scan Timing: About 3.06% done; ETC: 00:37 (0:16:22 remaining)
+SYN Stealth Scan Timing: About 3.69% done; ETC: 00:48 (0:26:31 remaining)
+SYN Stealth Scan Timing: About 4.24% done; ETC: 00:56 (0:34:14 remaining)
+SYN Stealth Scan Timing: About 4.79% done; ETC: 01:02 (0:40:04 remaining)
+SYN Stealth Scan Timing: About 6.70% done; ETC: 01:01 (0:37:49 remaining)
+SYN Stealth Scan Timing: About 10.12% done; ETC: 00:52 (0:28:35 remaining)
+SYN Stealth Scan Timing: About 12.45% done; ETC: 00:50 (0:26:08 remaining)
+SYN Stealth Scan Timing: About 14.77% done; ETC: 00:49 (0:24:20 remaining)
+SYN Stealth Scan Timing: About 17.37% done; ETC: 00:48 (0:22:41 remaining)
+SYN Stealth Scan Timing: About 21.76% done; ETC: 00:47 (0:21:16 remaining)
+SYN Stealth Scan Timing: About 24.99% done; ETC: 00:47 (0:19:52 remaining)
+SYN Stealth Scan Timing: About 29.87% done; ETC: 00:47 (0:18:28 remaining)
+SYN Stealth Scan Timing: About 33.48% done; ETC: 00:46 (0:17:07 remaining)
+SYN Stealth Scan Timing: About 38.31% done; ETC: 00:46 (0:15:44 remaining)
+SYN Stealth Scan Timing: About 42.55% done; ETC: 00:45 (0:14:20 remaining)
+SYN Stealth Scan Timing: About 46.66% done; ETC: 00:45 (0:13:03 remaining)
+SYN Stealth Scan Timing: About 51.67% done; ETC: 00:44 (0:11:42 remaining)
+SYN Stealth Scan Timing: About 56.88% done; ETC: 00:44 (0:10:24 remaining)
+SYN Stealth Scan Timing: About 61.57% done; ETC: 00:44 (0:09:11 remaining)
+SYN Stealth Scan Timing: About 66.46% done; ETC: 00:44 (0:07:59 remaining)
+SYN Stealth Scan Timing: About 71.50% done; ETC: 00:44 (0:06:45 remaining)
+SYN Stealth Scan Timing: About 76.35% done; ETC: 00:44 (0:05:32 remaining)
+Discovered open port 1337/tcp on 10.10.10.147
+SYN Stealth Scan Timing: About 81.48% done; ETC: 00:44 (0:04:21 remaining)
+SYN Stealth Scan Timing: About 86.85% done; ETC: 00:43 (0:03:01 remaining)
+SYN Stealth Scan Timing: About 88.68% done; ETC: 00:46 (0:02:56 remaining)
+SYN Stealth Scan Timing: About 94.06% done; ETC: 00:47 (0:01:35 remaining)
+Completed SYN Stealth Scan at 00:47, 1607.74s elapsed (65535 total ports)
+Initiating Service scan at 00:47
+Scanning 3 services on 10.10.10.147
+Completed Service scan at 00:49, 101.27s elapsed (3 services on 1 host)
+Initiating OS detection (try #1) against 10.10.10.147
+Retrying OS detection (try #2) against 10.10.10.147
+Retrying OS detection (try #3) against 10.10.10.147
+Retrying OS detection (try #4) against 10.10.10.147
+Retrying OS detection (try #5) against 10.10.10.147
+Initiating Traceroute at 00:49
+Completed Traceroute at 00:49, 0.31s elapsed
+Initiating Parallel DNS resolution of 2 hosts. at 00:49
+Completed Parallel DNS resolution of 2 hosts. at 00:49, 0.15s elapsed
+NSE: Script scanning 10.10.10.147.
+Initiating NSE at 00:49
+Completed NSE at 00:49, 10.99s elapsed
+Initiating NSE at 00:49
+Completed NSE at 00:49, 2.33s elapsed
+Nmap scan report for 10.10.10.147
+Host is up (0.34s latency).
+Not shown: 65532 closed ports
+PORT     STATE SERVICE VERSION
+22/tcp   open  ssh     OpenSSH 7.4p1 Debian 10+deb9u6 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 6d:7c:81:3d:6a:3d:f9:5f:2e:1f:6a:97:e5:00:ba:de (RSA)
+|   256 99:7e:1e:22:76:72:da:3c:c9:61:7d:74:d7:80:33:d2 (ECDSA)
+|_  256 6a:6b:c3:8e:4b:28:f7:60:85:b1:62:ff:54:bc:d8:d6 (ED25519)
+80/tcp   open  http    Apache httpd 2.4.25 ((Debian))
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache/2.4.25 (Debian)
+|_http-title: Apache2 Debian Default Page: It works
+1337/tcp open  waste?
+| fingerprint-strings: 
+|   DNSStatusRequestTCP: 
+|     15:15:35 up 49 min, 0 users, load average: 0.00, 0.00, 0.00
+|   DNSVersionBindReqTCP: 
+|     15:15:29 up 49 min, 0 users, load average: 0.00, 0.00, 0.00
+|   GenericLines: 
+|     15:15:15 up 49 min, 0 users, load average: 0.00, 0.00, 0.00
+|     What do you want me to echo back?
+|   GetRequest: 
+|     15:15:21 up 49 min, 0 users, load average: 0.00, 0.00, 0.00
+|     What do you want me to echo back? GET / HTTP/1.0
+|   HTTPOptions: 
+|     15:15:22 up 49 min, 0 users, load average: 0.00, 0.00, 0.00
+|     What do you want me to echo back? OPTIONS / HTTP/1.0
+|   Help: 
+|     15:15:40 up 49 min, 0 users, load average: 0.00, 0.00, 0.00
+|     What do you want me to echo back? HELP
+|   Kerberos: 
+|     15:15:42 up 50 min, 0 users, load average: 0.00, 0.00, 0.00
+|     What do you want me to echo back?
+|   NULL: 
+|     15:15:15 up 49 min, 0 users, load average: 0.00, 0.00, 0.00
+|   RPCCheck: 
+|     15:15:24 up 49 min, 0 users, load average: 0.00, 0.00, 0.00
+|   RTSPRequest: 
+|     15:15:23 up 49 min, 0 users, load average: 0.00, 0.00, 0.00
+|     What do you want me to echo back? OPTIONS / RTSP/1.0
+|   SSLSessionReq, TLSSessionReq: 
+|     15:15:41 up 50 min, 0 users, load average: 0.00, 0.00, 0.00
+|_    What do you want me to echo back?
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port1337-TCP:V=7.70%I=7%D=8/3%Time=5D448C53%P=x86_64-pc-linux-gnu%r(NUL
+SF:L,3F,"\x2015:15:15\x20up\x2049\x20min,\x20\x200\x20users,\x20\x20load\x
+SF:20average:\x200\.00,\x200\.00,\x200\.00\n")%r(GenericLines,64,"\x2015:1
+SF:5:15\x20up\x2049\x20min,\x20\x200\x20users,\x20\x20load\x20average:\x20
+SF:0\.00,\x200\.00,\x200\.00\n\nWhat\x20do\x20you\x20want\x20me\x20to\x20e
+SF:cho\x20back\?\x20\r\n")%r(GetRequest,72,"\x2015:15:21\x20up\x2049\x20mi
+SF:n,\x20\x200\x20users,\x20\x20load\x20average:\x200\.00,\x200\.00,\x200\
+SF:.00\n\nWhat\x20do\x20you\x20want\x20me\x20to\x20echo\x20back\?\x20GET\x
+SF:20/\x20HTTP/1\.0\r\n")%r(HTTPOptions,76,"\x2015:15:22\x20up\x2049\x20mi
+SF:n,\x20\x200\x20users,\x20\x20load\x20average:\x200\.00,\x200\.00,\x200\
+SF:.00\n\nWhat\x20do\x20you\x20want\x20me\x20to\x20echo\x20back\?\x20OPTIO
+SF:NS\x20/\x20HTTP/1\.0\r\n")%r(RTSPRequest,76,"\x2015:15:23\x20up\x2049\x
+SF:20min,\x20\x200\x20users,\x20\x20load\x20average:\x200\.00,\x200\.00,\x
+SF:200\.00\n\nWhat\x20do\x20you\x20want\x20me\x20to\x20echo\x20back\?\x20O
+SF:PTIONS\x20/\x20RTSP/1\.0\r\n")%r(RPCCheck,3F,"\x2015:15:24\x20up\x2049\
+SF:x20min,\x20\x200\x20users,\x20\x20load\x20average:\x200\.00,\x200\.00,\
+SF:x200\.00\n")%r(DNSVersionBindReqTCP,3F,"\x2015:15:29\x20up\x2049\x20min
+SF:,\x20\x200\x20users,\x20\x20load\x20average:\x200\.00,\x200\.00,\x200\.
+SF:00\n")%r(DNSStatusRequestTCP,3F,"\x2015:15:35\x20up\x2049\x20min,\x20\x
+SF:200\x20users,\x20\x20load\x20average:\x200\.00,\x200\.00,\x200\.00\n")%
+SF:r(Help,68,"\x2015:15:40\x20up\x2049\x20min,\x20\x200\x20users,\x20\x20l
+SF:oad\x20average:\x200\.00,\x200\.00,\x200\.00\n\nWhat\x20do\x20you\x20wa
+SF:nt\x20me\x20to\x20echo\x20back\?\x20HELP\r\n")%r(SSLSessionReq,65,"\x20
+SF:15:15:41\x20up\x2050\x20min,\x20\x200\x20users,\x20\x20load\x20average:
+SF:\x200\.00,\x200\.00,\x200\.00\n\nWhat\x20do\x20you\x20want\x20me\x20to\
+SF:x20echo\x20back\?\x20\x16\x03\n")%r(TLSSessionReq,65,"\x2015:15:41\x20u
+SF:p\x2050\x20min,\x20\x200\x20users,\x20\x20load\x20average:\x200\.00,\x2
+SF:00\.00,\x200\.00\n\nWhat\x20do\x20you\x20want\x20me\x20to\x20echo\x20ba
+SF:ck\?\x20\x16\x03\n")%r(Kerberos,63,"\x2015:15:42\x20up\x2050\x20min,\x2
+SF:0\x200\x20users,\x20\x20load\x20average:\x200\.00,\x200\.00,\x200\.00\n
+SF:\nWhat\x20do\x20you\x20want\x20me\x20to\x20echo\x20back\?\x20\n");
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.70%E=4%D=8/3%OT=22%CT=1%CU=30626%PV=Y%DS=2%DC=T%G=Y%TM=5D448CD7
+OS:%P=x86_64-pc-linux-gnu)SEQ(SP=105%GCD=1%ISR=107%TI=Z%CI=Z%II=I%TS=8)SEQ(
+OS:SP=105%GCD=1%ISR=107%TI=Z%CI=Z%TS=8)OPS(O1=M54BST11NW7%O2=M54BST11NW7%O3
+OS:=M54BNNT11NW7%O4=M54BST11NW7%O5=M54BST11NW7%O6=M54BST11)WIN(W1=7120%W2=7
+OS:120%W3=7120%W4=7120%W5=7120%W6=7120)ECN(R=Y%DF=Y%T=40%W=7210%O=M54BNNSNW
+OS:7%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF
+OS:=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=
+OS:%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=
+OS:0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RI
+OS:PCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=S)
+
+Uptime guess: 0.027 days (since Sat Aug  3 00:11:16 2019)
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=261 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using port 554/tcp)
+HOP RTT       ADDRESS
+1   307.32 ms 10.10.16.1
+2   154.88 ms 10.10.10.147
+
+NSE: Script Post-scanning.
+Initiating NSE at 00:49
+Completed NSE at 00:49, 0.00s elapsed
+Initiating NSE at 00:49
+Completed NSE at 00:49, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 1747.31 seconds
+           Raw packets sent: 71466 (3.149MB) | Rcvd: 67819 (2.717MB)
